@@ -103,7 +103,7 @@ fn main() {
         if i == 10 {
             c = None;
         } else {
-            println!("{}" i);
+            println!("{}", i);
             c = Some(i + 1);
         }
     }
@@ -112,7 +112,7 @@ fn main() {
     for v in vec.iter() {
         println!("{} " , v);
     }
-    
+    // 6-10
 
     
 }
