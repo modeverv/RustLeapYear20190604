@@ -18,8 +18,28 @@ fn main() {
         println!("{} is not a leap year.", year);
     }
     // 6-5
+    let circle1 = Circle::small_circle();
+    println!("Circle diameter: {}", circle1.diameter());
+    let a = "aaaaaaee";
+    let mut b = "aefeae";
+    //a = "fefea";
+    b = "ccccc";
+    // 6-6-3
+
 }
 
 fn is_leap_year(year:u32) -> bool {
     year % 4 == 0 && !(year % 100 == 0 && year % 400 != 0)
+}
+
+struct Circle {
+    radius: u32,
+}
+impl Circle {
+    fn diameter(&self) -> u32 {
+        self.radius * 2
+    }
+    fn small_circle() -> Circle {
+        Circle{radius:1}
+    }
 }
