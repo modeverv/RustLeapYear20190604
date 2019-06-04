@@ -107,7 +107,12 @@ fn main() {
             c = Some(i + 1);
         }
     }
-    // 
+    // 6-9-4 for 
+    let vec  = vec!["cyan", "m", "Y"];
+    for v in vec.iter() {
+        println!("{} " , v);
+    }
+    
 
     
 }
