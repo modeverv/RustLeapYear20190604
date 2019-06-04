@@ -45,7 +45,39 @@ fn main() {
     }
     let even_or_odd = if a % 2 == 0 { "even" } else { "odd" };
     println!("{}", even_or_odd);
-    // 6-8-2
+    // 6-8-2 match
+    let val = 100;
+    match val {
+        1 => println!("One"),
+        100 => println!("100"),
+        _ => println!("something else"),
+    }
+    let mm = match val {
+        1 => "One",
+        100 => "100",
+        _ => "something else",
+    };
+    let unknown = Some("Apple");
+    let string = match unknown {
+        Some(something) => String::from("Hi, ") + something,
+        None => String::from("Nothing"),
+    };
+    let ten = 10;
+    let ten_ref = &ten;
+    match ten_ref {
+        number => assert_eq!(&10, number),
+    }
+    match ten_ref {
+        &number => assert_eq!(10, number),
+    }
+    let string = Some("aaaaaaaaaaaaaaaaaaa");
+    let m = match string {
+        Some(s) if s.len() > 10 => "Long String",
+        Some(_) => "String",
+        None => "Nothing"
+    };
+    
+    
 }
 
 fn is_leap_year(year:u32) -> bool {
