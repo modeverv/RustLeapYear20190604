@@ -34,6 +34,9 @@ fn main() {
     const SECRET: i32 = 111;
     static STTC:i32 = 222;
     // 6-7 演算子
+    //let ans3 = 70 + 8.9; // error
+    let ans3 = 70.0 + 8.9;
+    // 6-8 分岐
 }
 
 fn is_leap_year(year:u32) -> bool {
