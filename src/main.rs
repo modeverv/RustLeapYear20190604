@@ -78,7 +78,26 @@ fn main() {
     };
     // 6-8-3 if let式
     // swift の if let にいっしょかな
+    // 6-9 繰り返し
+    // 6-0-1 loop
+    let mut c = 0;
+    loop {
+        println!("LOOOOOP");
+        if c > 10 {
+            break;
+        }
+        c += 1;
+    }
+    c = 0;
+    let ten = loop {
+        if c == 0 {
+            break c;
+        }
+        c += 1;
+    };
     
+
+
 
     
 }
