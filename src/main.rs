@@ -95,9 +95,19 @@ fn main() {
         }
         c += 1;
     };
-    
-
-
+    // 6-9-2 while
+    // 6-9-3 while let わからん
+    let mut c = Some(0);
+    // conterがSome(i)の場合だけループってこと？
+    while let Some(i) = c {
+        if i == 10 {
+            c = None;
+        } else {
+            println!("{}" i);
+            c = Some(i + 1);
+        }
+    }
+    // 
 
     
 }
