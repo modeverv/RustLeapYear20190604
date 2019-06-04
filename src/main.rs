@@ -30,8 +30,10 @@ fn main() {
     // できるよ、というはなし
     let a = 1;
     let a = 1;
-    
-
+    // 6-6-5 定数とスタティック変数
+    const SECRET: i32 = 111;
+    static STTC:i32 = 222;
+    // 6-7 演算子
 }
 
 fn is_leap_year(year:u32) -> bool {
