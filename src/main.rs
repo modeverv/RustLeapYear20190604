@@ -37,6 +37,15 @@ fn main() {
     //let ans3 = 70 + 8.9; // error
     let ans3 = 70.0 + 8.9;
     // 6-8 分岐
+    let a = 11;
+    if a % 2 == 0 {
+        println!("{} is an even number", a);
+    } else {
+        println!("odd");
+    }
+    let even_or_odd = if a % 2 == 0 { "even" } else { "odd" };
+    println!("{}", even_or_odd);
+    // 6-8-2
 }
 
 fn is_leap_year(year:u32) -> bool {
