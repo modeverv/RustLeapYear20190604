@@ -76,7 +76,10 @@ fn main() {
         Some(_) => "String",
         None => "Nothing"
     };
+    // 6-8-3 if let式
+    // swift の if let にいっしょかな
     
+
     
 }
 
