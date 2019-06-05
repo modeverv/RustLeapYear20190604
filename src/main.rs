@@ -113,6 +113,17 @@ fn main() {
         println!("{} " , v);
     }
     // 6-10
+    let one  = 1;
+    let plus_one = |x| {
+        x + one
+    };
+    let mut one = 1;
+    let plus_one = move |x| {
+        x + one
+    };
+    one += 1;
+    println!("{}", one);
+
 
     
 }
