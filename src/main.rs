@@ -114,19 +114,35 @@ fn main() {
     }
     // 6-10
     let one  = 1;
-    let plus_one = |x| {
+    let plus_one = |x: u32| {
         x + one
     };
     let mut one = 1;
-    let plus_one = move |x| {
+    let plus_one = move |x:u32| {
         x + one
     };
     one += 1;
     println!("{}", one);
     // 6-11 アトリビュート
     // #[test]とか
+    // 6-12 モジュールとアイテムの可視性
+    // 6-12-1 mod pub
+    // public とか private とか可視範囲指定とかできるらしい
+    server::echo();
+    network::ping();
 
     
+}
+mod network;
+mod server {
+    pub fn echo() {
+        println!("server");
+    }
+}
+mod client {
+    pub fn echo() {
+        println!("client");
+    }
 }
 
 fn is_leap_year(year:u32) -> bool {
